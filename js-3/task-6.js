@@ -22,7 +22,6 @@ function calculateTotalPrice(array, prop) {
   let totalPrice = 0;
   for (let i = 0; i < array.length; i += 1) {
     const keys = Object.keys(array[i]);
-
     if (prop === array[i][keys[0]]) {
       totalPrice += array[i][keys[1]] * array[i][keys[2]];
     }
